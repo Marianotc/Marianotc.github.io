@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<title>Proyecto Final</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/eventos.js"></script>
+</head>
+<body background="img/fondo.png">
+	<header>
+		<div class="page-header">
+		  <h1>Proyecto final <br>
+		  </h1>
+		</div>	
+		<nav>
+			<ul>
+				<li>
+					<button id="btnInicio">
+						<span class="glyphicon glyphicon-home" ></span>  Inicio
+					</button>
+				</li>
+				<li>
+					<button id="btnQuien">
+						<span class="glyphicon glyphicon-king" ></span>  Quien soy?
+					</button>
+				</li>
+				<li>
+					<button id="btnPrimer">
+						<span class="glyphicon glyphicon-tower" ></span>  Primer HTML
+					</button>
+				</li>
+				<li>
+					<button id="btnHtml">
+						<span class="glyphicon glyphicon-sunglasses" ></span>  HTML5
+					</button>
+				</li>
+				<li>
+					<button id="btnBootstrap">
+						<span class="glyphicon glyphicon-eye-open" ></span>  Bootstrap
+					</button>
+				</li>
+				<li>
+					<button id="btnJava">
+						<span class="glyphicon glyphicon-globe" ></span>  JavaScrip
+					</button>
+				</li>
+				<li>
+					<button id="btnPhp">
+						<span class="glyphicon glyphicon-search" ></span>  Php
+					</button>
+				</li>
+				
+				
+			</ul>			
+		</nav>
+		<select name="MenuResp" id="MenuResp" onchange="inicioApp()" class="form-control">
+				<option value="btnInicio">Inicio</option>
+				<option value="btnQuien">Quien soy?</option>
+				<option value="btnPrimer">Primer Html</option>
+				<option value="btnHtml">HTML5</option>
+				<option value="btnBootstrap">Bootstrap</option>
+				<option value="btnJava">JavaScript</option>
+				<option value="btnPhp">Php</option>
+		</select>
+	</header>
+	
+		<section>
+		<br>
+		<article id="artInicio">
+		<img src="img/programacionweb.png" alt="" id="img1">
+		</article>
+		<article id="artInicioTxt">
+		Desarrollo web es un término amplio que define la creación de sitios web para Internet o una intranet. Para conseguirlo se hace uso de tecnologías de software del lado del servidor y del cliente que involucran una combinación de procesos de base de datos con el uso de un navegador en Internet a fin de realizar determinadas tareas o mostrar información.
+
+		Tradicionalmente un software departamental o incluso un ambicioso proyecto corporativo de gran envergadura es desarrollado en forma standalone, es decir, usando lenguajes ya sea compilados (C, C++, Delphi), semicompilados (.NET, Mono, Java), o interpretados (Python, PHP) para crear tanto la funcionalidad como toda la interfaz de los usuarios, pero cabe perfectamente un desarrollo orientado a web para dichos propósitos, siendo más homogéneo y multiplataforma, y dependiendo de las tecnologías utilizadas, más rápido y robusto tanto para diseñar, implementar y probar, como para su uso una vez terminado.
+		</article>
+		<article id="artQuienSoy">
+		<img src="img/Yo2.png" alt="" id="img"> <br><br>
+		</article>
+		<article id="artQuienSoyTxt">
+		<span class="Titu">Datos Personales</span><br>
+		<span class="Negr">Nombre: </span> Mariano Terrazas Covarrubias <br>
+		<span class="Negr">N. de control: </span> 12170885<br>
+		<span class="Negr">Carrera: </span> Ingeniria en TIC´s<br>
+		<span class="Negr">Escuela: </span> Instituto Tecnológico Nacional de México Campus Culiacán<br>
+		<span class="Negr">Domicilio: </span> Calle Republica Dominicana 2452 Col. Humaya Culiacán<br>
+		<span class="Negr">Maestro: </span> Martin Leonardo Nevarez Rivas<br>
+		<span class="Negr">Materia: </span> Programación Web<br>
+		<br>
+		<span class="Negr">Escolaridad</span><br>
+		<span class="Negr">Primaria: </span>Escuela Primaria Justo Sierra<br>
+		<span class="Negr">Secundaria: </span> Escuela Secundaria Técnica #48<br>
+		<span class="Negr">Preparatoria: </span> Cobaes 56 General Macario Gaxiola<br>
+		<span class="Negr">Universidad: </span> Instituto Nacional de México Campus Culiacán <br>
+
+		</article>
+		<article id="artPrimer">
+		<img src="img/Primer.png" alt="" id="img">
+		<br> <br>
+		</article>
+		<article id="artPrimerTxt">
+		<span class="Titu">Primer página creada</span><br>
+		En esta práctica comenzamos colocando los diferentes tamaños de encabezados, también empezamos a trabajar con listas, las listas vienen de dos tipos: ordenadas y desordenadas. Otra cosa que le agregamos fue hacer referencia hacia un punto determinado de la misma página, o bien hacia otro sitio web. <br><br>
+		</article>
+		<article id="artIndice">
+		<img src="img/Indice.png" alt="" id="img"> <br><br>
+		</article>
+		<article id="artIndiceTxt">
+		<span class="Titu">Página con Índices</span><br>
+		Esta es otra práctica en la cual hacíamos referencia hacia diferentes secciones de esta misma.<br><br>
+		</article>
+		<article id="artHtml">
+		<img src="img/Html.png" alt="" id="img">
+		<br> <br>
+		</article>
+		<article id="artHtmlTxt">
+		<span class="Titu">Primer página creada con CSS</span><br>
+		Para esta práctica colocamos un menú de navegación, el cual fue mejorado con nuestra hoja de estilos CSS. Aprendimos a organizar nuestra información en secciones, y esta a su vez les podemos colocar artículos. Otra cosa que aplicamos fue la inserción de una imagen, la cual también fue mejorada en nuestra hoja de estilos.<br><br>
+		</article>
+		<article id="artCss">
+		<img src="img/Css.png" alt="" id="img">
+		<br> <br>
+		</article>
+		<article id="artCssTxt">
+		<span class="Titu">Práctica 1</span><br>
+		Para esta práctica se aplicaron los conocimientos adquiridos sobre las hojas de estilos de CSS y HTML. Se nos proporcionó la práctica en una imagen y se creó desde cero.<br><br>
+		</article>
+		<article id="artCss2">
+		<img src="img/Css2.png" alt="" id="img">
+		<br> <br>
+		</article>
+		<article id="artCss2Txt">
+		<span class="Titu">Práctica 2</span><br>
+		Para esta práctica se aplicaron los conocimientos adquiridos sobre las hojas de estilos de CSS y HTML. Se nos proporcionó la práctica en una imagen y se creó desde cero.<br><br>
+		</article>
+		<article id="artCss3">
+		<img src="img/Css3.png" alt="" id="img">
+		<br> <br>
+		</article>
+		<article id="artCss3Txt">
+		<span class="Titu">Práctica 3</span><br>
+		Para esta práctica se aplicaron los conocimientos adquiridos sobre las hojas de estilos de CSS y HTML. Se nos proporcionó la práctica en una imagen y se creó desde cero.<br><br>
+		</article>
+		<article id="artBootstrap">
+		<img src="img/Bootstrap.png" alt="" id="img">	 <br><br>
+		</article>
+		<article id="artBootstrapTxt">
+		<span class="Titu">Uso de Bootstrap</span><br>
+		Para esta práctica procedimos a incorporar los componentes de Bootstrap, el cual es una herramienta que nos facilita el diseño de nuestra hoja de estilos. Los componentes que añadimos fueron el estilo de los botones y la incorporación de iconos a estos mismos. <br><br>	
+		</article>
+		<article id="artJava">
+		<img src="img/Java.png" alt="" id="img"> <br><br>
+		</article>
+		<article id="artJavaTxt">
+		<span class="Titu">Uso de JavaScript</span><br>
+		Para esta práctica se elaboró una calculadora, con la incorporación de cuadros de textos y botones, el JavaScript es un lenguaje de programación el cual nos sirve para programar eventos, ya sea un clic a un botón o una modificación a un cuadro de texto.<br><br> 
+		</article>
+		<article id="artPhp">
+		<img src="img/Php.png" alt="" id="img"> <br><br>
+		</article>
+		<article id="artPhpTxt">
+		<span class="Titu">Uso de Php</span><br>
+		Para esta práctica realizamos un sistema el cual consistía en Altas, Bajas, Cambios y Consultas de un sistema. El Php es un lenguaje de programación del lado del servidor donde se encuentra nuestra información (Base de datos), este nos permite realizar consultas, inserciones, borrado y actualización de la información.  <br><br>
+		</article>
+	</section>
+	<footer>
+	<article>Contacto <br>
+	Celular: 697 110 0154 <br>
+	Correo: mariano_terrazas@hotmail.com</article>
+	<article>Derechos Reservados PW10 &copy;.</article>
+		
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
